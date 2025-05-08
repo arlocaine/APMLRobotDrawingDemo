@@ -1,0 +1,12 @@
+grid_frame = set_ref_frame(p[-0.145, -575.0, 0.0, 0.0, 3.141, 0.0])
+
+linear_speed_ms = 0.15
+linear_accel_ms = 0.5
+joint_speed_rads = 1.6
+joint_accel_radss = 1.6
+blend_radius_m = 0.004
+
+movel(pose_trans(grid_frame,p[0.0,0.0,-100.0,0.0,0.0,0.0]),linear_accel_ms,linear_speed_ms,0,blend_radius_m)
+movel(pose_trans(grid_frame,p[0.100,0.0,-100.0,0.0,0.0,0.0]),linear_accel_ms,linear_speed_ms,0,blend_radius_m)
+movel(pose_trans(grid_frame,p[0.100,100.0,-100.0,0.0,0.0,0.0]),linear_accel_ms,linear_speed_ms,0,blend_radius_m)
+movel(pose_trans(grid_frame,p[0.0,100.0,-100.0,0.0,0.0,0.0]),linear_accel_ms,linear_speed_ms,0,blend_radius_m)
